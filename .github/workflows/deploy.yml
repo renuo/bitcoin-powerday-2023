@@ -16,4 +16,4 @@ jobs:
         script: |
           mkdir -p ~/powerday
           cd ~/powerday
-          git -C "${{ github.ref_name }}" pull origin ${{ github.ref_name }} || git clone ${{ github.repositoryUrl }} "${{ github.ref_name }}"
+          git -C "${{ github.ref_name }}" pull origin ${{ github.ref_name }} || git clone --branch ${{ github.ref_name }} ${{ github.repositoryUrl }} "${{ github.ref_name }}"
