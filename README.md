@@ -121,9 +121,30 @@ git checkout -b <YOURNAME>
 
 ### Bitcoin Script
 
-https://github.com/BlockchainCommons/Learning-Bitcoin-from-the-Command-Line/blob/master/09_3_Testing_a_Bitcoin_Script.md
-https://www.crmarsh.com/script/
-https://nioctib.tech/#/transaction/f2f398dace996dab12e0cfb02fb0b59de0ef0398be393d90ebc8ab397550370b
+Reading:
+* https://en.bitcoin.it/wiki/Script (exhaustive and complicated)
+* https://www.crmarsh.com/script/
+* https://blog.bitjson.com/bitcoin-script-a-reading-list/ (a bit old)
+* https://blog.bitjson.com/bitauth-ide-write-and-debug-custom-bitcoin-scripts/
+* Tutorial for btcdeb: https://github.com/BlockchainCommons/Learning-Bitcoin-from-the-Command-Line/blob/master/09_3_Testing_a_Bitcoin_Script.md
+
+Tools:
+* Collection of simple JS tools: <https://coinb.in/>
+* Simple simulator for scripts: https://siminchen.github.io/bitcoinIDE/build/editor.html
+* Debugger for scripts: https://nioctib.tech/#/transaction/f2f398dace996dab12e0cfb02fb0b59de0ef0398be393d90ebc8ab397550370b
+* Online IDE: https://ide.bitauth.com/
+* Local Bitcoin Explorer [bx](https://github.com/libbitcoin/libbitcoin-explorer/wiki)
+
+  ```sh
+  bx script-decode 76A91489ABCDEFABBAABBAABBAABBAABBAABBAABBAABBA88AC
+  bx seed | bx ec-new | bx ec-to-public | bx ec-to-address
+  ```
+* Local Bitcoin Script Debugger and Compiler [btcdeb](https://github.com/bitcoin-core/btcdeb)
+
+  ```sh
+  btcdeb # https://github.com/bitcoin-core/btcdeb/blob/master/doc/btcdeb.md
+  btcc OP_DUP OP_HASH160 897c81ac37ae36f7bc5b91356cfb0138bfacb3c1 OP_EQUALVERIFY OP_CHECKSIG
+  ```
 
 ### Treasure Hunt
 
