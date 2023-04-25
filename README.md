@@ -14,7 +14,7 @@ It can be used to write "scripts" or smart contracts
 (yes, exactly the thing you might think would be the [innovation of Ethereum](https://ethereum.org/en/developers/docs/smart-contracts/)).
 During the day we'll look at how this scripts work and we'll try to dig up some lost coins.
 
-## Motivation
+### Motivation
 
 The Bitcoin Lightning Network becomes more widely used and
 it becomes as easy and as cheap as never before to send money to humans or even machines.
@@ -23,14 +23,14 @@ where you can now use micro-cent transactions instead of "likes".
 What Facebook wanted to do with [_Libra_](https://en.wikipedia.org/wiki/Diem_(digital_currency))
 is basically already existing and working.
 
-## Preparation
+### Preparation
 
 If you don't feel comfortable around the terms proof-of-work, hashes, public-key-cryptography,
 then please read-up as preparation. _3blue1brown_ is a good source (https://www.youtube.com/watch?v=bBC-nXj3Ng4).
 If you like to read code, there's simplified bitcoin-like blockchain here: https://github.com/renuo/lapidar/tree/master/lib/lapidar
 (relevant classes: `Block`, `Chain`, `Miner`, `Assessment`).
 
-## Schedule
+## The Day
 
 |  Time | Matter                   | Duration |
 | ----: | :----------------------- | -------: |
@@ -43,7 +43,7 @@ If you like to read code, there's simplified bitcoin-like blockchain here: https
 | 13:30 | Dig                      |     2.5h |
 | 16:00 | Collect results          |       1h |
 
-## Our Full Node
+### Our Full Node
 
 We've got a potent root server today (12 CPUs, 128GB RAM, 3TB SSD)
 on which runs a Bitcoin full synching node.
