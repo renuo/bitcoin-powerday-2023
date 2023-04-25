@@ -32,6 +32,9 @@ If you like to read code, there's simplified bitcoin-like blockchain here: https
 
 ## The Day
 
+In the morning we'll try to understand how the shovel works.
+In the afternoon we'll use it to dig.
+
 |  Time | Matter                   | Duration |
 | ----: | :----------------------- | -------: |
 |  9:00 | Briefing                 |    30min |
