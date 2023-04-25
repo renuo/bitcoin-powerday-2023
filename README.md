@@ -106,9 +106,18 @@ echo $result | jq '.result.tx[0].vin[0].coinbase' | xxd -r -p && echo ''
 No connections from the outside are accepted.
 If you want to, please setup an SSH tunnel.
 
-This repository will be used to share code samples
-and we'll summarize our findings here. Also it will be auto-deployed to
-the root server.
+### This Repository
+
+We'll collect and share our code here. Feel free to also use the Wiki.
+You can check out this repo on the server.
+It's probably best if you work in a separate folder on a separate branch.
+
+```
+cd ~/powerday/
+git clone git@github.com:renuo/bitcoin-powerday-2023.git "<YOURNAME>"
+cd <YOURNAME>
+git checkout -b <YOURNAME>
+```
 
 ## Legal
 
