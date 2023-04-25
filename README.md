@@ -119,6 +119,23 @@ cd <YOURNAME>
 git checkout -b <YOURNAME>
 ```
 
+### Bitcoin Script
+
+https://github.com/BlockchainCommons/Learning-Bitcoin-from-the-Command-Line/blob/master/09_3_Testing_a_Bitcoin_Script.md
+https://www.crmarsh.com/script/
+https://nioctib.tech/#/transaction/f2f398dace996dab12e0cfb02fb0b59de0ef0398be393d90ebc8ab397550370b
+
+### Treasure Hunt
+
+Bitcoin Treasure Hunt: * https://github.com/OutCast3k/coinbin/issues/35#issuecomment-167440998
+* https://bitcointalk.org/index.php?topic=5261766.0 and https://www.blockchain.com/explorer/addresses/btc/3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy (gone in less than 10s).
+* mempool.space
+* setup Hetzner server
+* Examples to research:
+    * snipe empty script transactions
+    * find bugs in libraries
+    * social engineering for p2sh (e.g examples from books, timelocks,  506321 OP_CHECKLOCKTIMEVERIFY OP_DROP, private keys (starting with 3))
+
 ## Legal
 
 * Time bookings on investment time.
