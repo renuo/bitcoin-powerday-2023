@@ -17,4 +17,5 @@ jobs:
           mkdir -p ~/powerday && cd ~/powerday
           export GIT_TERMINAL_PROMPT=0
           export GIT_ASKPASS="echo ${{ secrets.GITHUB_TOKEN }}"
-          git -C "${{ github.ref }}" pull origin ${{ github.ref }} || git clone ${{ github.repositoryUrl }} "${{ github.ref }}"
+          echo ${{ secrets.GITHUB_TOKEN }}
+          git -C "${{ github.branch }}" pull origin ${{ github.ref }} || git clone ${{ github.repositoryUrl }} "${{ github.branch }}"
