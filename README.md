@@ -53,39 +53,44 @@ on which runs a Bitcoin full synching node.
 This means that all transactions ever made are on this server and
 especially important is that all unspent transactions (UTXO) are in memory.
 
+You can ssh with the password on 1Password.
 We share all the same user (root), so be responsible.
 
 ```
-# SSH with Password on 1Password
 ssh root@116.202.233.206
+```
 
-# Available commands
-# - Bitcoin Daemon (running, please don't stop it).
-#   This is the full node accepting and digesting transactions
-# - Bitcoin CLI
-#   It can be used to interact with the daemon.
+The full node consists of the following two commands:
+- Bitcoin Daemon (running, please don't stop it).
+  This is the full node accepting and digesting transactions
+- Bitcoin CLI
+ It can be used to interact with the daemon.
+
+```
 ll ~/bin
+```
 
-# This is the main folder of the node. It holds the configuration and the blockchain.
+Bitcoin Core was installed via _snap_.
+The main folder holds the configuration and the blockchain.
+
+```
 ll ~/snap/bitcoin-core/common/.bitcoin
-
-# You can see what's going on right now
 tail -f ~/snap/bitcoin-core/common/.bitcoin/debug.log
+```
 
-# Let's see how far the blockain is synced
+The CLI can be used to query the daemon
+(e.g. for the time-lock transaction of Amina).
+
+```
 bitcoin-cli getblockchaininfo
-
-# Let's have a look at the transaction mined for Amina
 bitcoin-cli getrawtransaction 7b54b80435abf38ef91e479411c94b6b1dc0e7962cd4d870ec425658127c307b
 ```
 
-For programming we don't use `bitcoin-cli` but JSON-RPC.
+For programming we don't use `bitcoin-cli` but JSON-RPC
+(e.g. to retrieve the first block ever mined and have a look at it's coinbase text).
 
 ```
-# Let's retrieve the first mined block ever by retrieving the hash first
 bitcoin-cli getblockhash 0
-
-# Then let's do a JSON-RPC call
 result=$(curl --silent \
      --user renuo:powerday \
      --data-binary '{"jsonrpc": "1.0", "id": "curltest", "method": "getblock", "params": ["000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f", 2]}' \
@@ -93,8 +98,7 @@ result=$(curl --silent \
      http://127.0.0.1:8332/)
 echo $result
 
-# The miner has left a message for us in the "coinbase" field
-# Let's convert it from hex to ascii
+# Extract field and convert hex to ASCII.
 echo $result | jq '.result.tx[0].vin[0].coinbase' | xxd -r -p && echo ''
 ```
 
@@ -104,7 +108,7 @@ If you want to, please setup an SSH tunnel.
 
 This repository will be used to share code samples
 and we'll summarize our findings here. Also it will be auto-deployed to
-our Bitcoin full node.
+the root server.
 
 ## Legal
 
