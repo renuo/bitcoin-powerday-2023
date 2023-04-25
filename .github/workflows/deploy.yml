@@ -16,4 +16,16 @@ jobs:
         script: |
           mkdir -p ~/powerday
           cd ~/powerday
-          git -C "${{ github.ref_name }}" pull origin ${{ github.ref_name }} || git clone --branch ${{ github.ref_name }} ${{ github.repositoryUrl }} "${{ github.ref_name }}"
+          
+          repository_url="${{ github.repositoryUrl }}"
+          branch_name="${{ github.ref_name }}"
+          folder_name="$branch_name"
+
+          if [ ! -d "$folder_name" ]; then
+            git clone --branch "$branch_name" "$repository_url" "$folder_name"
+          else
+            cd "$folder_name"
+            git fetch origin
+            git checkout "$branch_name"
+            git pull origin "$branch_name"
+          fi
