@@ -204,7 +204,15 @@ There are some idea on what we could try:
   * Are UXTOs still available on Bitcoin Cash even though spent on Bitcoin Core?
   * Own ideas, like how you would play around with a timelock (`506321 OP_CHECKLOCKTIMEVERIFY OP_DROP`)
 * your own ideas…
-  
+
+## Learnings
+
+* [Raphi](https://github.com/renuo/bitcoin-powerday-2023/wiki/Learnings-from-Raphael)
+* [Mike](https://github.com/renuo/bitcoin-powerday-2023/wiki/Learning-Mike)
+* [Simon](https://github.com/renuo/bitcoin-powerday-2023/wiki/Learnings-Simon)
+* [Gianlo](https://github.com/renuo/bitcoin-powerday-2023/wiki/Learnings-Gianlo)
+* [Josua](https://github.com/renuo/bitcoin-powerday-2023/wiki/Learnings-Josua)
+
 ## Legal
 
 * Time bookings on investment time.
