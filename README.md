@@ -154,6 +154,7 @@ Question: Can you tell which part is in the funding transaction output
 and which is in the spending transaction input?
 
 #### Reading:
+* https://bitcoindev.network/guides/bitcoinjs-lib/bitcoin-script-puzzles/
 * https://en.bitcoin.it/wiki/Script (exhaustive and complicated)
 * https://learnmeabitcoin.com/technical/p2pkh
 * https://www.crmarsh.com/script/
