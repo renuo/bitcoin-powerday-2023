@@ -111,6 +111,7 @@ If you want to, please setup an SSH tunnel.
 We'll collect and share our code here. Feel free to also use the Wiki.
 You can check out this repo on the server.
 It's probably best if you work in a separate folder on a separate branch.
+Maybe someone can get [my trial for auto-deployment](.github/workflows/deploy.yml) to work.
 
 ```
 cd ~/powerday/
@@ -121,18 +122,52 @@ git checkout -b <YOURNAME>
 
 ### Bitcoin Script
 
-Reading:
+Bitcoin transactions actually consist of puzzles anyone can solve if they provide the correct program.
+Its programs are written in a Forth-like stack programming language which look like this:
+
+```
+10 5 5 OP_ADD OP_EQUAL
+```
+
+This program is split into two parts:
+
+* Locking script (scriptPubKey) in the funding transaction's output
+
+  ```
+  5 5 OP_ADD OP_EQUAL
+  ```
+* Unlocking script (scriptSig) in the spending transaction's input
+  
+  ```
+  10
+  ```
+
+So whoever can provide a valid solution to the locking script can spend
+the funds. There may be multiple solutions (e.g. `7 3 OP_ADD`).
+
+Most Bitcoin transaction scripts look like this:
+
+```
+<signature> <publikKey> OP_DUP OP_HASH160 <publicKeyHash> OP_EQUALVERIFY OP_CHECKSIG
+```
+
+Question: Can you tell which part is in the funding transaction output 
+and which is in the spending transaction input?
+
+#### Reading:
 * https://en.bitcoin.it/wiki/Script (exhaustive and complicated)
+* https://learnmeabitcoin.com/technical/p2pkh
 * https://www.crmarsh.com/script/
 * https://blog.bitjson.com/bitcoin-script-a-reading-list/ (a bit old)
 * https://blog.bitjson.com/bitauth-ide-write-and-debug-custom-bitcoin-scripts/
 * Tutorial for btcdeb: https://github.com/BlockchainCommons/Learning-Bitcoin-from-the-Command-Line/blob/master/09_3_Testing_a_Bitcoin_Script.md
 
-Tools:
+#### Tools:
 * Collection of simple JS tools: <https://coinb.in/>
 * Simple simulator for scripts: https://siminchen.github.io/bitcoinIDE/build/editor.html
 * Debugger for scripts: https://nioctib.tech/#/transaction/f2f398dace996dab12e0cfb02fb0b59de0ef0398be393d90ebc8ab397550370b
 * Online IDE: https://ide.bitauth.com/
+* Online Mempool Explorer: https://mempool.space/
 * Local Bitcoin Explorer [bx](https://github.com/libbitcoin/libbitcoin-explorer/wiki)
 
   ```sh
@@ -146,17 +181,24 @@ Tools:
   btcc OP_DUP OP_HASH160 897c81ac37ae36f7bc5b91356cfb0138bfacb3c1 OP_EQUALVERIFY OP_CHECKSIG
   ```
 
-### Treasure Hunt
+### Treasure Hunt (afternoon)
 
-Bitcoin Treasure Hunt: * https://github.com/OutCast3k/coinbin/issues/35#issuecomment-167440998
-* https://bitcointalk.org/index.php?topic=5261766.0 and https://www.blockchain.com/explorer/addresses/btc/3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy (gone in less than 10s).
-* mempool.space
-* setup Hetzner server
-* Examples to research:
-    * snipe empty script transactions
-    * find bugs in libraries
-    * social engineering for p2sh (e.g examples from books, timelocks,  506321 OP_CHECKLOCKTIMEVERIFY OP_DROP, private keys (starting with 3))
+Since anyone providing the correct unlocking script can spend the funding transaction's output
+it seems attractive to search for such puzzles to solve. This what we want to try this
+afternoon.
 
+There are some idea on what we could try:
+* Exploit bugs in software:
+  * snipe empty script transactions, see https://bitcointalk.org/index.php?topic=5261766.0
+    and https://www.blockchain.com/explorer/addresses/btc/3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy
+  * search for private keys (starting with a specific number)
+* Social engineering for P2SH to replay or alter examples from 
+  * Books
+  * GitHub issues
+  * Forums
+  * own ideas, like how you would play around with a timelock (`506321 OP_CHECKLOCKTIMEVERIFY OP_DROP`)
+* your own ideas…
+  
 ## Legal
 
 * Time bookings on investment time.
