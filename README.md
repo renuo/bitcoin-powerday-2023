@@ -171,15 +171,13 @@ and which is in the spending transaction input?
 * Debugger for scripts: https://nioctib.tech/#/transaction/f2f398dace996dab12e0cfb02fb0b59de0ef0398be393d90ebc8ab397550370b
 * Online IDE: https://ide.bitauth.com/
 * Online Mempool Explorer: https://mempool.space/
-* Local Bitcoin Explorer [bx](https://github.com/libbitcoin/libbitcoin-explorer/wiki)
 * Dump LevelDB https://github.com/in3rsha/bitcoin-utxo-dump
-
+* Local Bitcoin Explorer [bx](https://github.com/libbitcoin/libbitcoin-explorer/wiki)
   ```sh
   bx script-decode 76A91489ABCDEFABBAABBAABBAABBAABBAABBAABBAABBA88AC
   bx seed | bx ec-new | bx ec-to-public | bx ec-to-address
   ```
 * Local Bitcoin Script Debugger and Compiler [btcdeb](https://github.com/bitcoin-core/btcdeb)
-
   ```sh
   btcdeb # https://github.com/bitcoin-core/btcdeb/blob/master/doc/btcdeb.md
   btcc OP_DUP OP_HASH160 897c81ac37ae36f7bc5b91356cfb0138bfacb3c1 OP_EQUALVERIFY OP_CHECKSIG
