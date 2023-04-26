@@ -19,9 +19,10 @@ const network = bitcoin.networks.bitcoin
 //  bitcoin.opcodes.OP_5,
 //  bitcoin.opcodes.OP_EQUAL
 //])
-const redeemScript = bitcoin.script.compile([
-  bitcoin.opcodes.OP_1,
-])
+//const redeemScript = bitcoin.script.compile([
+//  bitcoin.opcodes.OP_1,
+//])
+//const redeemScript = Buffer.from('{}', "utf-8");
 
 console.log('redeemScript  ', redeemScript.toString('hex'))
 
@@ -53,7 +54,7 @@ const psbt = new bitcoin.Psbt({network})
   }) 
   .addOutput({
     address: alicePayment.address,
-    value: 100, // satoshi
+    value: 546, // satoshi
   })
 
 const getFinalScripts = (inputIndex, input, script) => {
