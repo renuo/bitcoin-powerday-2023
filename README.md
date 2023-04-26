@@ -157,6 +157,7 @@ and which is in the spending transaction input?
 * https://en.bitcoin.it/wiki/Script (exhaustive and complicated)
 * https://learnmeabitcoin.com/technical/p2pkh
 * https://www.crmarsh.com/script/
+* https://bitcoin.stackexchange.com/questions/91825/non-segwit-p2sh-bytes-structure/91853#91853
 * https://blog.bitjson.com/bitcoin-script-a-reading-list/ (a bit old)
 * https://blog.bitjson.com/bitauth-ide-write-and-debug-custom-bitcoin-scripts/
 * Tutorial for btcdeb: https://github.com/BlockchainCommons/Learning-Bitcoin-from-the-Command-Line/blob/master/09_3_Testing_a_Bitcoin_Script.md
