@@ -201,5 +201,6 @@ There are some idea on what we could try:
 ## Legal
 
 * Time bookings on investment time.
+* Why it's legal to hack Bitcoin (it's even intended that you do), it may not necessarily be moral, think about that.
 * Released under MIT license.
 * Copyright at Renuo
