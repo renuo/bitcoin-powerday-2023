@@ -194,12 +194,12 @@ There are some idea on what we could try:
   * snipe empty script transactions, see https://bitcointalk.org/index.php?topic=5261766.0
     and https://www.blockchain.com/explorer/addresses/btc/3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy
   * search for private keys (starting with a specific number)
-* Social engineering for P2SH to replay or alter examples from 
-  * Books
+* Social engineering for P2SH to replay or alter examples
+  * Examples from books or forums
   * GitHub issues
-  * Forums
   * Random numbers or seeds, like `1` in coinb.in resulting in the address <https://www.blockchain.com/explorer/addresses/btc/1Dt8ty59tU9LkrXG2ocWeSzKFAY8fu6jga>
-  * Nice private keys, like `11111…`
+  * Nice private keys, like [`…1`](https://www.blockchain.com/explorer/addresses/btc/1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH)
+  * Maybe there we could search for redeem scripts in transactions and see if the corresponding addresses still have funds available
   * Are UXTOs still available on Bitcoin Cash even though spent on Bitcoin Core?
   * Own ideas, like how you would play around with a timelock (`506321 OP_CHECKLOCKTIMEVERIFY OP_DROP`)
 * your own ideas…
