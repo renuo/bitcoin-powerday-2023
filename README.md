@@ -171,6 +171,7 @@ and which is in the spending transaction input?
 * Online IDE: https://ide.bitauth.com/
 * Online Mempool Explorer: https://mempool.space/
 * Local Bitcoin Explorer [bx](https://github.com/libbitcoin/libbitcoin-explorer/wiki)
+* Dump LevelDB https://github.com/in3rsha/bitcoin-utxo-dump
 
   ```sh
   bx script-decode 76A91489ABCDEFABBAABBAABBAABBAABBAABBAABBAABBA88AC
