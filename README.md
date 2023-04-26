@@ -195,7 +195,9 @@ There are some idea on what we could try:
   * Books
   * GitHub issues
   * Forums
-  * own ideas, like how you would play around with a timelock (`506321 OP_CHECKLOCKTIMEVERIFY OP_DROP`)
+  * Random numbers or seeds, like `1` in coinb.in resulting in the address https://www.blockchain.com/explorer/addresses/btc/1Dt8ty59tU9LkrXG2ocWeSzKFAY8fu6jga`
+  * Nice private keys, like `11111…`
+  * Own ideas, like how you would play around with a timelock (`506321 OP_CHECKLOCKTIMEVERIFY OP_DROP`)
 * your own ideas…
   
 ## Legal
