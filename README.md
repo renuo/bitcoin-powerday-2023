@@ -201,6 +201,7 @@ There are some idea on what we could try:
   * Forums
   * Random numbers or seeds, like `1` in coinb.in resulting in the address https://www.blockchain.com/explorer/addresses/btc/1Dt8ty59tU9LkrXG2ocWeSzKFAY8fu6jga`
   * Nice private keys, like `11111…`
+  * Are UXTOs still available on Bitcoin Cash even though spent on Bitcoin Core?
   * Own ideas, like how you would play around with a timelock (`506321 OP_CHECKLOCKTIMEVERIFY OP_DROP`)
 * your own ideas…
   
