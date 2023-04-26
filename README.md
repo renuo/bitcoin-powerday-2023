@@ -164,7 +164,7 @@ and which is in the spending transaction input?
 
 #### Tools:
 * Collection of simple JS tools: <https://coinb.in/>
-* https://bitcoincore.tech/apps/bitcoinjs-ui/index.html
+* Script TX builder: https://bitcoincore.tech/apps/bitcoinjs-ui/index.html
 * Simple simulator for scripts: https://siminchen.github.io/bitcoinIDE/build/editor.html
 * Debugger for scripts: https://nioctib.tech/#/transaction/f2f398dace996dab12e0cfb02fb0b59de0ef0398be393d90ebc8ab397550370b
 * Online IDE: https://ide.bitauth.com/
