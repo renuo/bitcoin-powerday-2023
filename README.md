@@ -38,8 +38,7 @@ In the afternoon we'll use it to dig.
 |  Time | Matter                   | Duration |
 | ----: | :----------------------- | -------: |
 |  9:00 | Briefing                 |    30min |
-|  9:30 | Playground               |    30min |
-| 10:00 | FAQ                      |    30min |
+|  9:30 | Playground & FAQ         |       1h |
 | 10:30 | Diverge                  |       1h |
 | 11:30 | Converge & Discuss       |       1h |
 | 12:30 | Lunch                    |       1h |
