@@ -162,6 +162,7 @@ and which is in the spending transaction input?
 * https://blog.bitjson.com/bitcoin-script-a-reading-list/ (a bit old)
 * https://blog.bitjson.com/bitauth-ide-write-and-debug-custom-bitcoin-scripts/
 * Tutorial for btcdeb: https://github.com/BlockchainCommons/Learning-Bitcoin-from-the-Command-Line/blob/master/09_3_Testing_a_Bitcoin_Script.md
+* https://curiosity-driven.org/bitcoin-contracts
 
 #### Tools:
 * Collection of simple JS tools: <https://coinb.in/>
