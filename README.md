@@ -206,11 +206,12 @@ There are some idea on what we could try:
 
 ## Learnings
 
-* [Raphi](https://github.com/renuo/bitcoin-powerday-2023/wiki/Learnings-from-Raphael)
-* [Mike](https://github.com/renuo/bitcoin-powerday-2023/wiki/Learning-Mike)
-* [Simon](https://github.com/renuo/bitcoin-powerday-2023/wiki/Learnings-Simon)
 * [Gianlo](https://github.com/renuo/bitcoin-powerday-2023/wiki/Learnings-Gianlo)
 * [Josua](https://github.com/renuo/bitcoin-powerday-2023/wiki/Learnings-Josua)
+* [Mike](https://github.com/renuo/bitcoin-powerday-2023/wiki/Learning-Mike)
+* [Oliver A](https://github.com/renuo/bitcoin-powerday-2023/wiki/Learnings-Oliver-A)
+* [Raphi](https://github.com/renuo/bitcoin-powerday-2023/wiki/Learnings-from-Raphael)
+* [Simon](https://github.com/renuo/bitcoin-powerday-2023/wiki/Learnings-Simon)
 
 ## Legal
 
